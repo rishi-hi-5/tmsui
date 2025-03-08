@@ -7,6 +7,9 @@ class AppTheme {
   static const Color secondaryTextColor = Colors.black;
   static const Color inputFieldColor = Colors.white;
   static const Color borderColor = Colors.black;
+  static const Color cardColor = Colors.white;
+  static const Color dialogColor = Colors.white;
+  static const Color dangerColor = Colors.red;
 
   static final ThemeData lightTheme = ThemeData(
     primaryColor: primaryColor,

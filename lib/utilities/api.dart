@@ -36,7 +36,7 @@ class APIService {
         default:
           throw Exception("Invalid HTTP method: $method");
       }
-      if (response.statusCode == 200 || response.statusCode == 201) {
+      if (response.statusCode == 200 || response.statusCode == 201 || response.statusCode == 204) {
         if (response.body.isEmpty) {
           return {"message": "No response body"};
         } else {
