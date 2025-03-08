@@ -173,6 +173,9 @@ class DriverManagement extends ConsumerWidget {
                   child: Text('Cancel'),
                 ),
                 ElevatedButton(
+                    style: TextButton.styleFrom(
+                        backgroundColor: AppTheme.primaryColor,
+                        foregroundColor: AppTheme.primaryTextColor),
                     onPressed: () {
                       ref.read(driversProvider.notifier).addDriver(
                             Driver(
